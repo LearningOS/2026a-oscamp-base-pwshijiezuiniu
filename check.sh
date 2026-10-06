@@ -2,7 +2,7 @@
 # OSCamp Exercise Checker
 # Checks each exercise's test status locally (no scoring — scoring runs in CI).
 
-set -e
+# set -e
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
@@ -59,35 +59,35 @@ ensure_riscv64_ready() {
 # Exercise list: "module:package:name"
 exercises=(
     # Module 1: Concurrency (Synchronous)
-    "01_concurrency_sync:thread_spawn:Thread Creation"
-    "01_concurrency_sync:mutex_counter:Mutex Shared State"
-    "01_concurrency_sync:channel:Channel Communication"
-    "01_concurrency_sync:process_pipe:Process Pipes"
+    #"01_concurrency_sync:thread_spawn:Thread Creation"
+    #"01_concurrency_sync:mutex_counter:Mutex Shared State"
+    #"01_concurrency_sync:channel:Channel Communication"
+    #"01_concurrency_sync:process_pipe:Process Pipes"
     # Module 2: no_std Development
-    "02_no_std_dev:mem_primitives:Memory Primitives"
-    "02_no_std_dev:bump_allocator:Bump Allocator"
-    "02_no_std_dev:free_list_allocator:Free-List Allocator"
-    "02_no_std_dev:syscall_wrapper:Syscall Wrapper"
-    "02_no_std_dev:fd_table:File Descriptor Table"
+    #"02_no_std_dev:mem_primitives:Memory Primitives"
+    ##"02_no_std_dev:bump_allocator:Bump Allocator"
+    #"02_no_std_dev:free_list_allocator:Free-List Allocator"
+    #"02_no_std_dev:syscall_wrapper:Syscall Wrapper"
+    #"02_no_std_dev:fd_table:File Descriptor Table"
     # Module 3: OS Concurrency Advanced
-    "03_os_concurrency:atomic_counter:Atomic Counter"
-    "03_os_concurrency:atomic_ordering:Memory Ordering"
-    "03_os_concurrency:spinlock:Spinlock"
-    "03_os_concurrency:spinlock_guard:RAII Spinlock Guard"
-    "03_os_concurrency:rwlock:Read-Write Lock"
+    #"03_os_concurrency:atomic_counter:Atomic Counter"
+    #"03_os_concurrency:atomic_ordering:Memory Ordering"
+    #"03_os_concurrency:spinlock:Spinlock"
+    #"03_os_concurrency:spinlock_guard:RAII Spinlock Guard"
+    #"03_os_concurrency:rwlock:Read-Write Lock"
     # Module 4: Context Switching
     "04_context_switch:stack_coroutine:Stackful Coroutine"
     "04_context_switch:green_threads:Green Threads"
     # Module 5: Async Programming
-    "05_async_programming:basic_future:Manual Future"
-    "05_async_programming:tokio_tasks:Tokio Tasks"
-    "05_async_programming:async_channel_ex:Async Channel"
-    "05_async_programming:select_timeout:Select/Timeout"
+    #"05_async_programming:basic_future:Manual Future"
+    #"05_async_programming:tokio_tasks:Tokio Tasks"
+    #"05_async_programming:async_channel_ex:Async Channel"
+    #"05_async_programming:select_timeout:Select/Timeout"
     # Module 6: Page Tables
-    "06_page_table:pte_flags:PTE Flags"
-    "06_page_table:page_table_walk:Page Table Walk"
-    "06_page_table:multi_level_pt:SV39 Multi-Level PT"
-    "06_page_table:tlb_sim:TLB Simulation"
+    #"06_page_table:pte_flags:PTE Flags"
+    #"06_page_table:page_table_walk:Page Table Walk"
+    #"06_page_table:multi_level_pt:SV39 Multi-Level PT"
+    #"06_page_table:tlb_sim:TLB Simulation"
 )
 
 echo -e "${BLUE}========================================${NC}"
